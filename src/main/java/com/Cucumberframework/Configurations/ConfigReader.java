@@ -1,6 +1,5 @@
 package com.Cucumberframework.Configurations;
 
-import com.Cucumberframework.enums.Browsers;
 import com.Cucumberframework.enums.OS;
 
 public interface ConfigReader {
@@ -17,4 +16,14 @@ public interface ConfigReader {
 
 	public OS getOS();
 
+	/*public String firstName();
+
+	public String lastName();
+
+	public String address();
+
+	public String city();
+
+	public String zipCode();
+*/
 }

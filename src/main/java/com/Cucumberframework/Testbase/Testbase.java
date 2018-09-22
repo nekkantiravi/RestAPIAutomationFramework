@@ -1,5 +1,7 @@
 package com.Cucumberframework.Testbase;
 
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -18,6 +20,15 @@ public class Testbase {
 		return driver;
 
 	}
+	
+	public static byte[] getScreenShot() {
+        try {
+            return ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
+        } catch (Exception e) {
+        	System.out.println(e.getMessage());
+           return null;
+        }
+    }
 
 }
 

@@ -12,7 +12,7 @@ public class Homepage {
 	public WebDriver driver;
 	Waithelper waithelper;
 
-	@FindBy(xpath = "//*[@id=\'n2-ss-6\']/div[1]/div/div/div[1]/div[1]/img")
+	@FindBy(xpath = "//*[@id=\'link-rail\']/div/div/div[1]/nav/ul/li[1]/a")
 	public WebElement homepage;
 
 	@FindBy(xpath = "//*[@id=\'menu-item-50\']/a")
@@ -22,7 +22,7 @@ public class Homepage {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 		waithelper = new Waithelper(driver);
-		waithelper.waitForElement(homepage, 60);
+		//waithelper.waitForElement(homepage, 60);
 	}
 	
 	public void landingHomepage() {
