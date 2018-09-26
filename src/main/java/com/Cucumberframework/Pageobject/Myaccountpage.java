@@ -1,41 +1,43 @@
 package com.Cucumberframework.Pageobject;
 
 import java.io.File;
+import java.io.IOException;
 
+import org.codehaus.jackson.JsonParseException;
+import org.codehaus.jackson.map.JsonMappingException;
+import org.codehaus.jackson.map.ObjectMapper;
 import org.junit.Assert;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
 import com.Cucumberframework.Bean.Accountinfo;
-import com.Cucumberframework.Helper.Waithelper;
+import com.Cucumberframework.Bean.Constants.Constants;
 import com.Cucumberframework.JsonReader.Jasonreader;
 import com.Cucumberframework.Resourcehelper.Resourcehelper;
+import com.Cucumberframework.SelectHelper.SelectDropDown;
 import com.Cucumberframework.Testbase.Testbase;
+import com.Cucumberframework.VerificationHelper.VerificationHelper;
+import com.Cucumberframework.WaitHelper.Waithelper;
 
 public class Myaccountpage {
 
 	private WebDriver driver;
-	Waithelper waithelper;
-	Jasonreader jasonreader;
-
+	Waithelper waithelper = new Waithelper(driver);
+	VerificationHelper verificationhelper = new VerificationHelper(driver);
+    SelectDropDown select=new SelectDropDown(driver);
 	File file = new File(Resourcehelper.getResourcePath("/src/test/resources/Data/Genericdetails.json"));
 
 	Accountinfo accountinfo = Jasonreader.convertJasonToJava(file, Accountinfo.class);
 
 	public String enteredFirstName = accountinfo.getFirstName();
 	public String enteredLastName = accountinfo.getLastName();
-	//public String enteredAddress = accountinfo.getAddress();
+	// public String enteredAddress = accountinfo.getAddress();
 	public String enteredCity = accountinfo.getCity();
 	public String enteredZipCode = accountinfo.getZipCode();
 
 	@FindBy(xpath = "//*[@id=\'page-36\']/div/div[1]/div/p[2]")
-	public WebElement myaccountpage;
+	WebElement myaccountpage;
 
 	@FindBy(xpath = "//*[@id=\'page-36\']/div/div[1]/nav/ul/li[4]/a")
 	WebElement addressLink;
@@ -64,9 +66,8 @@ public class Myaccountpage {
 	@FindBy(xpath = "//input[@id='shipping_city']")
 	WebElement city;
 
-	@FindBy(xpath = "//div[@class='select2-container state_select']/a")
+	@FindBy(xpath = "//div[@class='select2-container state_select']/a/span[1]")
 	WebElement state;
-	
 
 	@FindBy(xpath = "//input[@id='shipping_postcode']")
 	WebElement zipCode;
@@ -77,12 +78,12 @@ public class Myaccountpage {
 	public Myaccountpage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
-		waithelper = new Waithelper(driver);
 
 	}
 
 	public void landingOnMyaccountPage() {
-		Assert.assertTrue(myaccountpage.isDisplayed());
+
+		Assert.assertTrue(verificationhelper.isDisplayed(myaccountpage));
 
 	}
 
@@ -116,8 +117,8 @@ public class Myaccountpage {
 	}
 
 	public void enterAddress() {
-		//this.address.sendKeys(enteredAddress);
-		
+		// this.address.sendKeys(enteredAddress);
+
 	}
 
 	public void enterCity() {
@@ -125,7 +126,7 @@ public class Myaccountpage {
 	}
 
 	public void selectState() {
-		state.click();
+		select.selectByIndex(state, 1);
 	}
 
 	public void enterZipcode() {
@@ -135,4 +136,18 @@ public class Myaccountpage {
 	public void clickOnAddressButton() {
 		addressButton.click();
 	}
+
 }
+
+/*
+ * public static void main(String[] args) { ObjectMapper mapper=new
+ * ObjectMapper();
+ * 
+ * try { Accountinfo info=mapper.readValue(new
+ * File((Resourcehelper.getResourcePath(
+ * "/src/test/resources/Data/Genericdetails.json"))), Accountinfo.class);
+ * System.out.println(info.getFirstName()+" " +info.getLastName()+ " " +
+ * info.getZipCode()); } catch (JsonParseException e) { e.printStackTrace(); }
+ * catch (JsonMappingException e) { e.printStackTrace(); } catch (IOException e)
+ * { e.printStackTrace(); } }
+ */

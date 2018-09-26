@@ -18,7 +18,7 @@ public class PropertyFileReader implements ConfigReader {
 			String filepath = Resourcehelper.getResourcePath("/src/test/resources/Configfile/config.properties");
 			file = new FileInputStream(filepath);
 			OR = new Properties();
-
+            
 			OR.load(file);
 		} catch (IOException e) {
 			e.printStackTrace();

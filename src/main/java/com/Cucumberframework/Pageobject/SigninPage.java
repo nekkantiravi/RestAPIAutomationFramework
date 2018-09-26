@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.Cucumberframework.Helper.Waithelper;
+import com.Cucumberframework.WaitHelper.Waithelper;
 
 public class SigninPage {
 

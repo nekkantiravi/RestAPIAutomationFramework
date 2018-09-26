@@ -14,7 +14,7 @@ public class HomepageSD {
 
 	@Given("^i am on the hompage$")
 	public void i_am_on_the_hompage() throws Throwable {
-
+		homepage.landingHomepage();
 		Testbase.driver.get(reader.getUrl());
 
 	}
