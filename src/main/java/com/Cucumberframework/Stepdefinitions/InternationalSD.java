@@ -19,17 +19,17 @@ public class InternationalSD {
 
 	@Then("^i should navigate to context chooser page$")
 	public void i_should_navigate_to_context_chooser_page() throws Throwable {
-		ip.contextPageDisplayed();
+		//ip.contextPageDisplayed();
 	}
 
 	@Then("^i select shipping country$")
 	public void i_select_shipping_country() throws Throwable {
-		ip.selectInternatioanlCountry(3);
+		ip.selectInternatioanlCountry();
 	}
 
 	@Then("^i select currency$")
 	public void i_select_currency() throws Throwable {
-		ip.selectInternatioanlCurrency(3);
+		ip.selectInternatioanlCurrency();
 	}
 
 	@Then("^i click on save button$")

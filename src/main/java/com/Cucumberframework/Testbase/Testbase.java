@@ -20,18 +20,18 @@ public class Testbase {
 		return driver;
 
 	}
-	
+
 	public static byte[] getScreenShot() {
-        try {
-            return ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
-        } catch (Exception e) {
-        	System.out.println(e.getMessage());
-           return null;
-        }
-    }
+		try {
+			return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+			return null;
+		}
+	}
 
 }
-
 
 /*
  * if (System.getProperty("os.name").contains(OS.Window.name().toLowerCase())) {

@@ -17,8 +17,8 @@ public class Jasonreader {
 		T result = null;
 
 		try {
-			result =mapper.readValue(filepath, cls);
-			
+			result = mapper.readValue(filepath, cls);
+
 		} catch (JsonParseException e) {
 			e.printStackTrace();
 		} catch (JsonMappingException e) {

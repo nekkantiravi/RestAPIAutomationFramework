@@ -21,6 +21,7 @@ public class WindowHelper {
 	// This method will switch to child window based on Index
 	public void switchToWindow(int index) {
 		Set<String> windows = driver.getWindowHandles();
+
 		int i = 1;
 		for (String window : windows) {
 			if (i == index) {
@@ -38,8 +39,8 @@ public class WindowHelper {
 		String parentwindow = driver.getWindowHandle();
 		for (String window : windows) {
 			if (!window.equalsIgnoreCase(parentwindow))
-				
-			driver.close();
+
+				driver.close();
 		}
 		driver.switchTo().window(parentwindow);
 	}

@@ -1,13 +1,26 @@
+[{
+    "firstname":"ravi",
+    "lastname":"kumar",
+     "email":"test@gmail.com",
+     "confirmemail":"test@gmail.com",
+     "username":"automationtesting",
+      "password":"test123",
+     "confirmpassword":"test123"
+},
+
 {
-  "firstName": "ravi",
-  "lastName": "kumar",    
-  "city": "Hyderabad",  
-  "zipCode": "500018"
-  
-}
+    "firstname":"testing",
+    "lastname":"nekkanti",
+     "email":"test@gmail.com",
+     "confirmemail":"test@gmail.com",
+     "username":"automationtesting",
+      "password":"test123",
+     "confirmpassword":"test123"
+}]
 
 
-  
+
+
 
 
 
