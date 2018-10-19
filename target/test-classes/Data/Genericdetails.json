@@ -1,4 +1,4 @@
-[{
+{
     "firstname":"ravi",
     "lastname":"kumar",
      "email":"test@gmail.com",
@@ -16,7 +16,7 @@
      "username":"automationtesting",
       "password":"test123",
      "confirmpassword":"test123"
-}]
+}
 
 
 

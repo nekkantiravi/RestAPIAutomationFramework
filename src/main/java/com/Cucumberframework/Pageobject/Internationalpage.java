@@ -50,7 +50,7 @@ public class Internationalpage {
 	}
 	
 	public void selectInternatioanlCountry() {
-		waithelper.getWait(60, 60);
+		
 		select.selectUsingValue(shippingCountry, "AL");
 	}
 	

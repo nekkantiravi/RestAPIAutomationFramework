@@ -1,5 +1,6 @@
 package com.Cucumberframework.WindowsHelper;
 
+import java.util.Iterator;
 import java.util.Set;
 
 import org.openqa.selenium.WebDriver;
@@ -34,16 +35,25 @@ public class WindowHelper {
 
 	// This method will close all tabbed window and switch to parent window
 
-	public void closeAllTabsAndSwitchToMainWondow() {
+	public void closeAllTabsAndSwitchToMainWondow(WebDriver driver) {
 		Set<String> windows = driver.getWindowHandles();
-		String parentwindow = driver.getWindowHandle();
+		     Iterator<String> it = windows.iterator();
+		     String childwindowid = it.next();
+		     System.out.println("child:" +childwindowid);
+		     driver.switchTo().window(childwindowid);
+		     driver.close();
+		     String parentwindowid =it.next();
+		     System.out.println("child:" +parentwindowid);
+		     driver.switchTo().window(parentwindowid);
+	}
+		/*String parentwindow = driver.getWindowHandle();
 		for (String window : windows) {
 			if (!window.equalsIgnoreCase(parentwindow))
 
 				driver.close();
 		}
 		driver.switchTo().window(parentwindow);
-	}
+	}*/
 
 	public void navigateBack() {
 		driver.navigate().back();

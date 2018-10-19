@@ -1,20 +1,20 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Featurefile/International.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Featurefile/Windowhandler.feature");
 formatter.feature({
   "line": 1,
-  "name": "Verify international shipping",
+  "name": "Handling different types of popups",
   "description": "",
-  "id": "verify-international-shipping",
+  "id": "handling-different-types-of-popups",
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 17151515048,
+  "duration": 8423112616,
   "status": "passed"
 });
 formatter.scenario({
   "line": 3,
-  "name": "Verify IS",
+  "name": "Handling window popup",
   "description": "",
-  "id": "verify-international-shipping;verify-is",
+  "id": "handling-different-types-of-popups;handling-window-popup",
   "type": "scenario",
   "keyword": "Scenario"
 });
@@ -25,84 +25,61 @@ formatter.step({
 });
 formatter.step({
   "line": 6,
-  "name": "i click on shipping to link",
-  "keyword": "When "
+  "name": "i click on childpoup window link",
+  "keyword": "And "
 });
 formatter.step({
   "line": 7,
-  "name": "i should navigate to context chooser page",
+  "name": "child window should be opened",
   "keyword": "Then "
 });
 formatter.step({
   "line": 8,
-  "name": "i select shipping country",
+  "name": "i click on close button",
   "keyword": "And "
 });
 formatter.step({
   "line": 9,
-  "name": "i select currency",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 10,
-  "name": "i click on save button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 11,
-  "name": "i should navigate to the corresponding country page",
+  "name": "i should navigate to parent window",
   "keyword": "Then "
 });
 formatter.match({
   "location": "HomepageSD.i_am_on_the_hompage()"
 });
 formatter.result({
-  "duration": 18410083298,
+  "duration": 3117444754,
   "status": "passed"
 });
 formatter.match({
-  "location": "InternationalSD.i_click_on_shipping_to_link()"
+  "location": "WindowpoupSD.i_click_on_childpoup_window_link()"
 });
 formatter.result({
-  "duration": 728703073,
+  "duration": 301613708,
   "status": "passed"
 });
 formatter.match({
-  "location": "InternationalSD.i_should_navigate_to_context_chooser_page()"
+  "location": "WindowpoupSD.child_window_should_be_opened()"
 });
 formatter.result({
-  "duration": 68424,
+  "duration": 35495,
   "status": "passed"
 });
 formatter.match({
-  "location": "InternationalSD.i_select_shipping_country()"
+  "location": "WindowpoupSD.i_click_on_close_button()"
 });
 formatter.result({
-  "duration": 911757,
-  "error_message": "java.lang.NullPointerException\r\n\tat com.Cucumberframework.Pageobject.Internationalpage.selectInternatioanlCountry(Internationalpage.java:53)\r\n\tat com.Cucumberframework.Stepdefinitions.InternationalSD.i_select_shipping_country(InternationalSD.java:27)\r\n\tat ✽.And i select shipping country(Featurefile/International.feature:8)\r\n",
-  "status": "failed"
+  "duration": 80223936,
+  "status": "passed"
 });
 formatter.match({
-  "location": "InternationalSD.i_select_currency()"
+  "location": "WindowpoupSD.i_should_navigate_to_parent_window()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 61154,
+  "status": "passed"
 });
-formatter.match({
-  "location": "InternationalSD.i_click_on_save_button()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "InternationalSD.i_should_navigate_to_the_corresponding_country_page()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.embedding("image/png", "embedded0.png");
 formatter.after({
-  "duration": 1158938684,
+  "duration": 731772341,
   "status": "passed"
 });
 });

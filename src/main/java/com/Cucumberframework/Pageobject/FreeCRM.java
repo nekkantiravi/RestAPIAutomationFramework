@@ -22,7 +22,7 @@ public class FreeCRM {
 
 	VerificationHelper verificationhelper = new VerificationHelper(driver);
 	Jasonreader reader;
-	Waithelper waithelper;
+	Waithelper waithelper=new Waithelper(driver);
 
 	File file = new File(Resourcehelper.getResourcePath("/src/test/resources/Data/Genericdetails.json"));
 	CrmConstants crm = Jasonreader.convertJasonToJava(file, CrmConstants.class);
@@ -77,21 +77,17 @@ public class FreeCRM {
 	public FreeCRM(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
-		waithelper = new Waithelper(driver);
+		
 	}
 
 	public void clickOnSignUpLink() {
-		/*
-		 * waithelper.waitForElement(Signuplink, Constants.getExplictwait()); String
-		 * fff= Signuplink.getText(); System.out.println(fff);
-		 */
+		waithelper.waitForElementClickable(driver, Signuplink, 20);
 		Signuplink.sendKeys(Keys.ENTER);
 
 	}
 
 	public void landingOnRegistrationPage() {
 		Assert.assertTrue(verificationhelper.isDisplayed(registrationPage));
-
 	}
 
 	public void selectEditionDropDown() {
