@@ -90,8 +90,8 @@ public class FreeCRM {
 		Assert.assertTrue(verificationhelper.isDisplayed(registrationPage));
 	}
 
-	public void selectEditionDropDown() {
-		select.selectByIndex(Editiondropdown, 1);
+	public void selectEditionDropDown() {	
+		select.selectByIndexes(Editiondropdown, 1);
 	}
 
 	public void cFirstName() {

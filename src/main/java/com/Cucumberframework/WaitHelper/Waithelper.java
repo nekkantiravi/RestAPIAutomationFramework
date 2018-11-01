@@ -66,7 +66,7 @@ public class Waithelper {
 
 	}
 
-	public WebDriverWait getWait(WebDriver driver, int timeOutInSeconds, int pollingEveryInMilliSec) {
+	public void getWait(WebDriver driver, int timeOutInSeconds, int pollingEveryInMilliSec) {
 		WebDriverWait wait = new WebDriverWait(driver, timeOutInSeconds);
 		                   
 		wait.pollingEvery(java.time.Duration.ofMillis(pollingEveryInMilliSec));
@@ -77,7 +77,7 @@ public class Waithelper {
 		wait.ignoring(StaleElementReferenceException.class);
 		wait.ignoring(NoSuchFrameException.class);
 	   
-		return null;
+		
 
 	}
 

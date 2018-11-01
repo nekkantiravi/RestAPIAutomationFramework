@@ -119,7 +119,7 @@ public class Myaccountpage {
 	}
 
 	public void selectState() {
-		select.selectByIndex(state, 1);
+		select.selectByIndexes(state, 1);
 	}
 
 	public void enterZipcode() {

@@ -1,20 +1,20 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Featurefile/Windowhandler.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Featurefile/CRMSignIn.feature");
 formatter.feature({
   "line": 1,
-  "name": "Handling different types of popups",
+  "name": "validate sign in crm page",
   "description": "",
-  "id": "handling-different-types-of-popups",
+  "id": "validate-sign-in-crm-page",
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 8423112616,
+  "duration": 5275005538,
   "status": "passed"
 });
 formatter.scenario({
   "line": 3,
-  "name": "Handling window popup",
+  "name": "Validate signin CRM page",
   "description": "",
-  "id": "handling-different-types-of-popups;handling-window-popup",
+  "id": "validate-sign-in-crm-page;validate-signin-crm-page",
   "type": "scenario",
   "keyword": "Scenario"
 });
@@ -25,61 +25,49 @@ formatter.step({
 });
 formatter.step({
   "line": 6,
-  "name": "i click on childpoup window link",
+  "name": "i enter username and password",
   "keyword": "And "
 });
 formatter.step({
   "line": 7,
-  "name": "child window should be opened",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 8,
-  "name": "i click on close button",
+  "name": "i click on login button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 9,
-  "name": "i should navigate to parent window",
+  "line": 8,
+  "name": "i should naviage to main page",
   "keyword": "Then "
 });
 formatter.match({
   "location": "HomepageSD.i_am_on_the_hompage()"
 });
 formatter.result({
-  "duration": 3117444754,
+  "duration": 4383733859,
   "status": "passed"
 });
 formatter.match({
-  "location": "WindowpoupSD.i_click_on_childpoup_window_link()"
+  "location": "CrmSignInSD.i_enter_username_and_password()"
 });
 formatter.result({
-  "duration": 301613708,
+  "duration": 196088083,
   "status": "passed"
 });
 formatter.match({
-  "location": "WindowpoupSD.child_window_should_be_opened()"
+  "location": "CrmSignInSD.i_click_on_login_button()"
 });
 formatter.result({
-  "duration": 35495,
+  "duration": 1294106251,
   "status": "passed"
 });
 formatter.match({
-  "location": "WindowpoupSD.i_click_on_close_button()"
+  "location": "CrmSignInSD.i_should_naviage_to_main_page()"
 });
 formatter.result({
-  "duration": 80223936,
-  "status": "passed"
-});
-formatter.match({
-  "location": "WindowpoupSD.i_should_navigate_to_parent_window()"
-});
-formatter.result({
-  "duration": 61154,
+  "duration": 123592,
   "status": "passed"
 });
 formatter.after({
-  "duration": 731772341,
+  "duration": 773869690,
   "status": "passed"
 });
 });

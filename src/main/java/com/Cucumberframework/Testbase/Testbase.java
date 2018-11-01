@@ -11,7 +11,7 @@ public class Testbase {
 
 	public WebDriver selectBrowser(String browser) {
 
-		if (browser.equalsIgnoreCase("Chrome")) {
+		if (browser.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver",
 					System.getProperty("user.dir") + "/src/test/resources/Drivers/chromedriver.exe");
 			driver = new ChromeDriver();

@@ -51,11 +51,11 @@ public class Internationalpage {
 	
 	public void selectInternatioanlCountry() {
 		
-		select.selectUsingValue(shippingCountry, "AL");
+		select.selectUsingValues(shippingCountry, "AL");
 	}
 	
 	public void selectInternatioanlCurrency() {
-		select.selectUsingValue(currency, "BSD");
+		select.selectUsingValues(currency, "BSD");
 		
 	}
 	public void countryPageDisplayed() {

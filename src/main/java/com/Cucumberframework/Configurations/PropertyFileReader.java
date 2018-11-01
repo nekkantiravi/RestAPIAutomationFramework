@@ -47,6 +47,7 @@ public class PropertyFileReader implements ConfigReader {
 
 	public OS getOS() {
 		return OS.valueOf(OR.getProperty("OS"));
+	
 	}
 
 	/*public String firstName() {

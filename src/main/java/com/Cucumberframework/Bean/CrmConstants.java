@@ -1,5 +1,7 @@
 package com.Cucumberframework.Bean;
 
+import java.util.HashMap;
+
 public class CrmConstants {
 	private String firstname;
 	private String lastname;
@@ -35,6 +37,13 @@ public class CrmConstants {
 
 	public String getConfirmpassword() {
 		return confirmpassword;
+	}
+	
+	public static HashMap<String, String> getUserLoginInfo() {
+		HashMap<String,String> usermap=new HashMap<String,String>();
+		usermap.put("customer", "naveenk_test@123");
+		return usermap;
+		
 	}
 
 }

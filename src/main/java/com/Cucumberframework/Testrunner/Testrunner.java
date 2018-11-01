@@ -5,7 +5,7 @@ import cucumber.api.junit.Cucumber;
 import cucumber.api.CucumberOptions;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = { "classpath:Featurefile/Windowhandler.feature" }, glue = {
+@CucumberOptions(features = { "classpath:Featurefile/CRMSignIn.feature" }, glue = {
 		"classpath:com.Cucumberframework.Stepdefinitions" }, plugin = { "pretty", "html:target/htmlFile" })
 
 public class Testrunner {

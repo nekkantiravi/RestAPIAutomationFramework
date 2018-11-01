@@ -11,18 +11,18 @@ public class SelectDropDown {
 		this.driver = driver;
 	}
 
-	public void selectUsingValue(WebElement element, String value) {
+	public void selectUsingValues(WebElement element, String value) {
 		Select select = new Select(element);
 		select.selectByValue(value);
 	}
 
-	public void selectByIndex(WebElement element, int index) {
+	public void selectByIndexes(WebElement element, int index) {
 
 		Select select = new Select(element);
 		select.selectByIndex(index);
 	}
 
-	public void selectByVisibleText(WebElement element, String visibletext) {
+	public void selectByVisibleTexts(WebElement element, String visibletext) {
 
 		Select select = new Select(element);
 		select.selectByVisibleText(visibletext);
