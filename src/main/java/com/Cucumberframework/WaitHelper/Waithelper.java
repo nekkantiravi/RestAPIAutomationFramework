@@ -9,18 +9,16 @@ import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.FluentWait;
-import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.google.gson.annotations.Until;
+import com.Cucumberframework.Testbase.Testbase;
 
 public class Waithelper {
 
 	private WebDriver driver;
 
 	public Waithelper(WebDriver driver) {
-		this.driver = driver;
+		this.driver=driver;
 	}
 
 	public void setImplictWait(long timeout, TimeUnit unit) {
@@ -41,47 +39,58 @@ public class Waithelper {
 	// selenium WD will wait for the element first because
 	// of implictwait and then explictwait will be applied. Hence total
 	// synchronization wait will be increased for each element.
-	public void waitForElement(WebDriver driver, WebElement element, long timeOutInSeconds) {
+	
+	public void waitForElement(WebElement element, long timeOutInSeconds) {
 		WebDriverWait wait = new WebDriverWait(driver, timeOutInSeconds);
 		wait.until(ExpectedConditions.visibilityOf(element));
-
+driver.getTitle();
 	}
 
-	public void waitForElementClickable(WebDriver driver, WebElement element, int timeOutInSeconds) {
-		WebDriverWait wait = new WebDriverWait(driver, timeOutInSeconds);
-		wait.until(ExpectedConditions.elementToBeClickable(element));
+	/*public static void sendKeys(WebDriver driver, WebElement element, int timeOutInSeconds, String value) {
+		
+		new WebDriverWait(driver, timeOutInSeconds).until(ExpectedConditions.elementToBeClickable(element));
+		
+		element.sendKeys(value);
 
-	}
+	}*/
+	
+public void elementToBeClickable(WebElement element, long timeOutInSeconds) {
+		
+	WebDriverWait wait=new WebDriverWait(driver, timeOutInSeconds);
+			wait.until(ExpectedConditions.elementToBeClickable(element));
+			
+}
 
-	public boolean waitForElementNotPresent(WebDriver driver, WebElement element, long timeOutInSeconds) {
+	public boolean waitForElementNotPresent(WebElement element, long timeOutInSeconds) {
 		WebDriverWait wait = new WebDriverWait(driver, timeOutInSeconds);
 		boolean status = wait.until(ExpectedConditions.invisibilityOf(element));
 		return status;
 
 	}
 
-	public void waitForFrameTOBeAvailableAndSwitchToIt(WebDriver driver, WebElement element, long timeOutInSeconds) {
+	public void waitForFrameTOBeAvailableAndSwitchToIt(WebElement element, long timeOutInSeconds) {
 		WebDriverWait wait = new WebDriverWait(driver, timeOutInSeconds);
 		wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(element));
-
+		
 	}
 
-	public void getWait(WebDriver driver, int timeOutInSeconds, int pollingEveryInMilliSec) {
+	public void getWait(int timeOutInSeconds, int pollingEveryInMilliSec) {
 		WebDriverWait wait = new WebDriverWait(driver, timeOutInSeconds);
 		                   
 		wait.pollingEvery(java.time.Duration.ofMillis(pollingEveryInMilliSec));
-		Wait<WebDriver> wait1=new FluentWait<WebDriver>(driver);
+		//lWait<WebDriver> wait1=new FluentWait<WebDriver>(driver);
 		
 		wait.ignoring(NoSuchElementException.class);
 		wait.ignoring(ElementNotVisibleException.class);
 		wait.ignoring(StaleElementReferenceException.class);
 		wait.ignoring(NoSuchFrameException.class);
+		
 	   
 		
 
 	}
 
-	public void testexplictWait(WebDriver driver, WebElement element, int timeout) {
+	public void testexplictWait(WebElement element, int timeout) {
 		new WebDriverWait(driver, timeout).ignoring(StaleElementReferenceException.class)
 				.until(ExpectedConditions.elementToBeClickable(element));
 

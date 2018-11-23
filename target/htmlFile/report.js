@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 5275005538,
+  "duration": 5410926883,
   "status": "passed"
 });
 formatter.scenario({
@@ -42,32 +42,32 @@ formatter.match({
   "location": "HomepageSD.i_am_on_the_hompage()"
 });
 formatter.result({
-  "duration": 4383733859,
+  "duration": 9047954043,
   "status": "passed"
 });
 formatter.match({
   "location": "CrmSignInSD.i_enter_username_and_password()"
 });
 formatter.result({
-  "duration": 196088083,
+  "duration": 203574925,
   "status": "passed"
 });
 formatter.match({
   "location": "CrmSignInSD.i_click_on_login_button()"
 });
 formatter.result({
-  "duration": 1294106251,
+  "duration": 6299270466,
   "status": "passed"
 });
 formatter.match({
   "location": "CrmSignInSD.i_should_naviage_to_main_page()"
 });
 formatter.result({
-  "duration": 123592,
+  "duration": 103492,
   "status": "passed"
 });
 formatter.after({
-  "duration": 773869690,
+  "duration": 749865183,
   "status": "passed"
 });
 });

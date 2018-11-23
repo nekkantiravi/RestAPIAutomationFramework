@@ -22,6 +22,8 @@ public class Hooks {
 	public void afterScenario(Scenario scenario) {
 		if (scenario.isFailed()) {
 			scenario.embed(Testbase.getScreenShot(), "image/png");
+			
+			
 
 		}
 		Testbase.driver.quit();

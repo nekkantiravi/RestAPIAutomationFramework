@@ -1,7 +1,7 @@
 package com.Cucumberframework.Bean;
 
 public class Constants {
-	public final static long explictWait = 60;
+	public final static long explictWait = 20;
 	public final static long implictWait = 60;
 
 	public static long getExplictwait() {

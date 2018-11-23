@@ -1,6 +1,5 @@
 	package com.Cucumberframework.Stepdefinitions;
 
-import com.Cucumberframework.Bean.CrmConstants;
 import com.Cucumberframework.Pageobject.FreeCRM;
 import com.Cucumberframework.Testbase.Testbase;
 
@@ -9,7 +8,7 @@ import cucumber.api.java.en.When;
 
 public class FreeCrmSD {
 	FreeCRM freecrm = new FreeCRM(Testbase.driver);
-	CrmConstants crm = new CrmConstants();
+	
 
 	@When("^i click on signup link$")
 	public void i_click_on_signup_link() {

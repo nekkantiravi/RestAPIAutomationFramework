@@ -11,17 +11,17 @@ public class FrameHelper {
 		this.driver = driver;
 	}
 
-	public void switcToFrameIndex(int frameIndex) {
+	public static void switcToFrameIndex(WebDriver driver, int frameIndex) {
 
 		driver.switchTo().frame(frameIndex);
 	}
 
-	public void switcToFramename(String framename) {
+	public static void switcToFramename(WebDriver driver, String framename) {
 
 		driver.switchTo().frame(framename);
 	}
 
-	public void switcToFrameelement(WebElement frameElement) {
+	public static void switcToFrameelement(WebDriver driver, WebElement frameElement) {
 
 		driver.switchTo().frame(frameElement);
 	}

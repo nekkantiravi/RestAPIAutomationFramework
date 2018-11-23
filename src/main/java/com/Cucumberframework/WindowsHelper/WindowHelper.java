@@ -16,6 +16,7 @@ public class WindowHelper {
 	// This method will switch to parent window
 	public void switchToParentWindow() {
 		driver.switchTo().defaultContent();
+	
 
 	}
 
@@ -56,6 +57,7 @@ public class WindowHelper {
 	}*/
 
 	public void navigateBack() {
+		driver.navigate().to("http://www.google.com");
 		driver.navigate().back();
 	}
 

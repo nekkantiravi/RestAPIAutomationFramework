@@ -81,7 +81,7 @@ public class FreeCRM {
 	}
 
 	public void clickOnSignUpLink() {
-		waithelper.waitForElementClickable(driver, Signuplink, 20);
+		
 		Signuplink.sendKeys(Keys.ENTER);
 
 	}
