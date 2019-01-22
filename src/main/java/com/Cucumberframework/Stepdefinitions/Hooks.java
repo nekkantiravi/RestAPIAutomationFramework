@@ -1,5 +1,6 @@
 package com.Cucumberframework.Stepdefinitions;
 
+import com.Cucumberframework.Configurations.ConfigReader;
 import com.Cucumberframework.Configurations.PropertyFileReader;
 import com.Cucumberframework.Testbase.Testbase;
 
@@ -10,11 +11,10 @@ import cucumber.api.java.Before;
 public class Hooks {
 
 	Testbase testbase = new Testbase();;
-	PropertyFileReader reader = new PropertyFileReader();;
+	ConfigReader reader = new PropertyFileReader();;
 
 	@Before
 	public void initializeTest() {
-
 		testbase.selectBrowser(reader.getBrowser());
 	}
 
@@ -22,9 +22,6 @@ public class Hooks {
 	public void afterScenario(Scenario scenario) {
 		if (scenario.isFailed()) {
 			scenario.embed(Testbase.getScreenShot(), "image/png");
-			
-			
-
 		}
 		Testbase.driver.quit();
 	}

@@ -1,20 +1,20 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Featurefile/CRMSignIn.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("Featurefile/Freecrm.feature");
 formatter.feature({
   "line": 1,
-  "name": "validate sign in crm page",
+  "name": "Verify CRM registration page",
   "description": "",
-  "id": "validate-sign-in-crm-page",
+  "id": "verify-crm-registration-page",
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 5410926883,
+  "duration": 5681789374,
   "status": "passed"
 });
 formatter.scenario({
   "line": 3,
-  "name": "Validate signin CRM page",
+  "name": "Verify CRM successful creation of registration page",
   "description": "",
-  "id": "validate-sign-in-crm-page;validate-signin-crm-page",
+  "id": "verify-crm-registration-page;verify-crm-successful-creation-of-registration-page",
   "type": "scenario",
   "keyword": "Scenario"
 });
@@ -25,49 +25,169 @@ formatter.step({
 });
 formatter.step({
   "line": 6,
-  "name": "i enter username and password",
-  "keyword": "And "
+  "name": "i click on signup link",
+  "keyword": "When "
 });
 formatter.step({
   "line": 7,
-  "name": "i click on login button",
-  "keyword": "And "
+  "name": "i should navigate to registration  page",
+  "keyword": "Then "
 });
 formatter.step({
   "line": 8,
-  "name": "i should naviage to main page",
+  "name": "i select edition from dropdown",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 9,
+  "name": "i should enter firstname",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 10,
+  "name": "i should enter lastname",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 11,
+  "name": "i should enter email",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 12,
+  "name": "i should enter confirmemail",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 13,
+  "name": "i should enter username",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 14,
+  "name": "i should enter password",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 15,
+  "name": "i should enter confirm password",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 16,
+  "name": "i check the terms and conditions checkbox",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 17,
+  "name": "i click on submit button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 18,
+  "name": "i should navigate to profile details page",
   "keyword": "Then "
 });
 formatter.match({
   "location": "HomepageSD.i_am_on_the_hompage()"
 });
 formatter.result({
-  "duration": 9047954043,
+  "duration": 9254208331,
   "status": "passed"
 });
 formatter.match({
-  "location": "CrmSignInSD.i_enter_username_and_password()"
+  "location": "FreeCrmSD.i_click_on_signup_link()"
 });
 formatter.result({
-  "duration": 203574925,
+  "duration": 6682197783,
   "status": "passed"
 });
 formatter.match({
-  "location": "CrmSignInSD.i_click_on_login_button()"
+  "location": "FreeCrmSD.i_should_navigate_to_registration_page()"
 });
 formatter.result({
-  "duration": 6299270466,
+  "duration": 40279891,
   "status": "passed"
 });
 formatter.match({
-  "location": "CrmSignInSD.i_should_naviage_to_main_page()"
+  "location": "FreeCrmSD.i_select_edition_from_dropdown()"
 });
 formatter.result({
-  "duration": 103492,
+  "duration": 154265551,
+  "status": "passed"
+});
+formatter.match({
+  "location": "FreeCrmSD.i_should_enter_firstname()"
+});
+formatter.result({
+  "duration": 97617196,
+  "status": "passed"
+});
+formatter.match({
+  "location": "FreeCrmSD.i_should_enter_lastname()"
+});
+formatter.result({
+  "duration": 76496640,
+  "status": "passed"
+});
+formatter.match({
+  "location": "FreeCrmSD.i_should_enter_email()"
+});
+formatter.result({
+  "duration": 187354437,
+  "status": "passed"
+});
+formatter.match({
+  "location": "FreeCrmSD.i_should_enter_confirmemail()"
+});
+formatter.result({
+  "duration": 194646796,
+  "status": "passed"
+});
+formatter.match({
+  "location": "FreeCrmSD.i_should_enter_username()"
+});
+formatter.result({
+  "duration": 288361221,
+  "status": "passed"
+});
+formatter.match({
+  "location": "FreeCrmSD.i_should_enter_password()"
+});
+formatter.result({
+  "duration": 146945822,
+  "status": "passed"
+});
+formatter.match({
+  "location": "FreeCrmSD.i_should_enter_confirm_password()"
+});
+formatter.result({
+  "duration": 124118925,
+  "status": "passed"
+});
+formatter.match({
+  "location": "FreeCrmSD.i_check_the_terms_and_conditions_checkbox()"
+});
+formatter.result({
+  "duration": 5095670515,
+  "status": "passed"
+});
+formatter.match({
+  "location": "FreeCrmSD.i_click_on_submit_button()"
+});
+formatter.result({
+  "duration": 5094818628,
+  "status": "passed"
+});
+formatter.match({
+  "location": "FreeCrmSD.i_shoud_navigate_to_profile_details_page()"
+});
+formatter.result({
+  "duration": 50036,
   "status": "passed"
 });
 formatter.after({
-  "duration": 749865183,
+  "duration": 762172107,
   "status": "passed"
 });
 });

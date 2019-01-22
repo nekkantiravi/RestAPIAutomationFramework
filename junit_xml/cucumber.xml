@@ -1,9 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="21.711695">
-<testcase classname="validate sign in crm page" name="Validate signin CRM page" time="21.711695">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="33.880993">
+<testcase classname="Verify CRM registration page" name="Verify CRM successful creation of registration page" time="33.880993">
 <system-out><![CDATA[Given i am on the hompage...................................................passed
-And i enter username and password...........................................passed
-And i click on login button.................................................passed
-Then i should naviage to main page..........................................passed
+When i click on signup link.................................................passed
+Then i should navigate to registration  page................................passed
+And i select edition from dropdown..........................................passed
+And i should enter firstname................................................passed
+And i should enter lastname.................................................passed
+And i should enter email....................................................passed
+And i should enter confirmemail.............................................passed
+And i should enter username.................................................passed
+And i should enter password.................................................passed
+And i should enter confirm password.........................................passed
+And i check the terms and conditions checkbox...............................passed
+And i click on submit button................................................passed
+Then i should navigate to profile details page..............................passed
 ]]></system-out>
 </testcase>
 </testsuite>

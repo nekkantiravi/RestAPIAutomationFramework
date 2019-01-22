@@ -21,19 +21,17 @@ public class FreeCRM {
 	SelectDropDown select = new SelectDropDown(driver);
 
 	VerificationHelper verificationhelper = new VerificationHelper(driver);
-	Jasonreader reader;
-	Waithelper waithelper=new Waithelper(driver);
 
 	File file = new File(Resourcehelper.getResourcePath("/src/test/resources/Data/Genericdetails.json"));
 	CrmConstants crm = Jasonreader.convertJasonToJava(file, CrmConstants.class);
 
-	public String crmFirstname = crm.getFirstname();
-	public String crmLastname = crm.getLastname();
-	public String crmEmail = crm.getEmail();
-	public String crmConfirmEmail = crm.getConfirmemail();
-	public String crmuserName = crm.getUsername();
-	public String crmPassword = crm.getPassword();
-	public String crmConfirmPassword = crm.getConfirmpassword();
+	String crmFirstname = crm.getFirstname();
+	String crmLastname = crm.getLastname();
+	String crmEmail = crm.getEmail();
+	String crmConfirmEmail = crm.getConfirmemail();
+	String crmuserName = crm.getUsername();
+	String crmPassword = crm.getPassword();
+	String crmConfirmPassword = crm.getConfirmpassword();
 
 	@FindBy(xpath = "//*[@id='navbar-collapse']/ul/li[2]/a")
 	WebElement Signuplink;
@@ -87,10 +85,12 @@ public class FreeCRM {
 	}
 
 	public void landingOnRegistrationPage() {
+
 		Assert.assertTrue(verificationhelper.isDisplayed(registrationPage));
 	}
 
 	public void selectEditionDropDown() {	
+
 		select.selectByIndexes(Editiondropdown, 1);
 	}
 
@@ -138,7 +138,7 @@ public class FreeCRM {
 	public void profilePage() {
 
 		Assert.assertTrue(verificationhelper.isDisplayed(profilepage));
-		// profilepage.isDisplayed();
+		profilepage.isDisplayed();
 	}
 
 	public void clickOnSubmitButton() {

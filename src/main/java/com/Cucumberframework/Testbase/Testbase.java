@@ -18,8 +18,8 @@ public class Testbase {
 			if (browser.equalsIgnoreCase(Browsers.CHROME.name())) {
 				System.setProperty("webdriver.chrome.driver",
 						System.getProperty("user.dir") + "/src/test/resources/Drivers/chromedriver.exe");
-				driver = new ChromeDriver();
 
+				driver = new ChromeDriver();
 				driver.manage().window().maximize();
 				driver.manage().deleteAllCookies();
 			} else if (System.getProperty("os.name").contains(OS.Window.name())) {

@@ -1,3 +1,4 @@
+G:\SeleniumTutorial\Cucumberframework\src\main\java\com\Cucumberframework\ActionsHelper\ActionsHelper.java
 G:\SeleniumTutorial\Cucumberframework\src\main\java\com\Cucumberframework\Bean\Constants.java
 G:\SeleniumTutorial\Cucumberframework\src\main\java\com\Cucumberframework\Bean\CrmConstants.java
 G:\SeleniumTutorial\Cucumberframework\src\main\java\com\Cucumberframework\Pageobject\Homepage.java
@@ -7,6 +8,7 @@ G:\SeleniumTutorial\Cucumberframework\src\main\java\com\Cucumberframework\FrameH
 G:\SeleniumTutorial\Cucumberframework\src\main\java\com\Cucumberframework\Configurations\ConfigReader.java
 G:\SeleniumTutorial\Cucumberframework\src\main\java\com\Cucumberframework\SelectHelper\SelectDropDown.java
 G:\SeleniumTutorial\Cucumberframework\src\main\java\com\Cucumberframework\Stepdefinitions\HomepageSD.java
+G:\SeleniumTutorial\Cucumberframework\src\main\java\com\Cucumberframework\AlertsHelper\AlertsHelper.java
 G:\SeleniumTutorial\Cucumberframework\src\main\java\com\Cucumberframework\WaitHelper\Waithelper.java
 G:\SeleniumTutorial\Cucumberframework\src\main\java\com\Cucumberframework\Configurations\PropertyFileReader.java
 G:\SeleniumTutorial\Cucumberframework\src\main\java\com\Cucumberframework\Stepdefinitions\MyaccountSD.java
@@ -17,6 +19,7 @@ G:\SeleniumTutorial\Cucumberframework\src\main\java\com\Cucumberframework\Testba
 G:\SeleniumTutorial\Cucumberframework\src\main\java\com\Cucumberframework\Testrunner\Testrunner.java
 G:\SeleniumTutorial\Cucumberframework\src\main\java\com\Cucumberframework\Configurations\Objectreader.java
 G:\SeleniumTutorial\Cucumberframework\src\main\java\com\Cucumberframework\Pageobject\FreeCRM.java
+G:\SeleniumTutorial\Cucumberframework\src\main\java\com\Cucumberframework\Stepdefinitions\CrmSignInSD.java
 G:\SeleniumTutorial\Cucumberframework\src\main\java\com\Cucumberframework\enums\Browsers.java
 G:\SeleniumTutorial\Cucumberframework\src\main\java\com\Cucumberframework\Stepdefinitions\FreeCrmSD.java
 G:\SeleniumTutorial\Cucumberframework\src\main\java\com\Cucumberframework\Stepdefinitions\InternationalSD.java
@@ -24,5 +27,8 @@ G:\SeleniumTutorial\Cucumberframework\src\main\java\com\Cucumberframework\JsonRe
 G:\SeleniumTutorial\Cucumberframework\src\main\java\com\Cucumberframework\Stepdefinitions\SigninSD.java
 G:\SeleniumTutorial\Cucumberframework\src\main\java\com\Cucumberframework\VerificationHelper\VerificationHelper.java
 G:\SeleniumTutorial\Cucumberframework\src\main\java\com\Cucumberframework\Pageobject\Myaccountpage.java
+G:\SeleniumTutorial\Cucumberframework\src\main\java\com\Cucumberframework\Pageobject\WindowHandler.java
 G:\SeleniumTutorial\Cucumberframework\src\main\java\com\Cucumberframework\Stepdefinitions\Hooks.java
 G:\SeleniumTutorial\Cucumberframework\src\main\java\com\Cucumberframework\Bean\Accountinfo.java
+G:\SeleniumTutorial\Cucumberframework\src\main\java\com\Cucumberframework\Pageobject\CrmSignIn.java
+G:\SeleniumTutorial\Cucumberframework\src\main\java\com\Cucumberframework\Stepdefinitions\WindowpoupSD.java

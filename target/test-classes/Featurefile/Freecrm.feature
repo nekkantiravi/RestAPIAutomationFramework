@@ -15,4 +15,5 @@ And i should enter password
 And i should enter confirm password
 And i check the terms and conditions checkbox
 And i click on submit button
-Then i shoud navigate to profile details page
+Then i should navigate to profile details page
+

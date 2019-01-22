@@ -6,24 +6,24 @@ import org.openqa.selenium.interactions.Actions;
 
 public class ActionsHelper {
 
-	private WebDriver driver;
+    private WebDriver driver;
 
-	public ActionsHelper(WebDriver driver) {
-		this.driver = driver;
+    public ActionsHelper(WebDriver driver) {
+        this.driver = driver;
 
-	}
+    }
 
-	public void mouseHover(WebElement element) {
+    public void mouseHover(WebElement element) {
 
-		Actions action = new Actions(driver);
+        Actions action = new Actions(driver);
 
-		action.moveToElement(element).build().perform();
+        action.moveToElement(element).build().perform();
 
-	}
+    }
 
-	public void dragAndDrop(WebElement element) {
-		Actions action = new Actions(driver);
-		action.clickAndHold(element).moveToElement(element).release(element).build().perform();
+    public void dragAndDrop(WebElement element) {
+        Actions action = new Actions(driver);
+        action.clickAndHold(element).moveToElement(element).release(element).build().perform();
 
-	}
+    }
 }

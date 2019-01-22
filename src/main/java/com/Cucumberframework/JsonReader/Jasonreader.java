@@ -8,26 +8,28 @@ import org.codehaus.jackson.map.JsonMappingException;
 import org.codehaus.jackson.map.ObjectMapper;
 
 public class Jasonreader {
-	private static ObjectMapper mapper;
-	static {
-		mapper = new ObjectMapper();
-	}
+    private static ObjectMapper mapper;
 
-	public static <T> T convertJasonToJava(File filepath, Class<T> cls) {
-		T result = null;
+    static {
+        mapper = new ObjectMapper();
+    }
 
-		try {
-			result = mapper.readValue(filepath, cls);
+    public static <T> T convertJasonToJava(File filepath, Class<T> cls) {
+        T result = null;
 
-		} catch (JsonParseException e) {
-			e.printStackTrace();
-		} catch (JsonMappingException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+        try {
+            result = mapper.readValue(filepath, cls);
 
-		return result;
 
-	}
+        } catch (JsonParseException e) {
+            e.printStackTrace();
+        } catch (JsonMappingException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return result;
+
+    }
 }

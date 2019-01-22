@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 5410926883,
+              "duration": 5681789374,
               "status": "passed"
             },
             "match": {
@@ -15,13 +15,13 @@
           }
         ],
         "line": 3,
-        "name": "Validate signin CRM page",
+        "name": "Verify CRM successful creation of registration page",
         "description": "",
-        "id": "validate-sign-in-crm-page;validate-signin-crm-page",
+        "id": "verify-crm-registration-page;verify-crm-successful-creation-of-registration-page",
         "after": [
           {
             "result": {
-              "duration": 749865183,
+              "duration": 762172107,
               "status": "passed"
             },
             "match": {
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 9047954043,
+              "duration": 9254208331,
               "status": "passed"
             },
             "line": 5,
@@ -46,47 +46,167 @@
           },
           {
             "result": {
-              "duration": 203574925,
+              "duration": 6682197783,
               "status": "passed"
             },
             "line": 6,
-            "name": "i enter username and password",
+            "name": "i click on signup link",
             "match": {
-              "location": "CrmSignInSD.i_enter_username_and_password()"
+              "location": "FreeCrmSD.i_click_on_signup_link()"
             },
-            "keyword": "And "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 6299270466,
+              "duration": 40279891,
               "status": "passed"
             },
             "line": 7,
-            "name": "i click on login button",
+            "name": "i should navigate to registration  page",
             "match": {
-              "location": "CrmSignInSD.i_click_on_login_button()"
+              "location": "FreeCrmSD.i_should_navigate_to_registration_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 154265551,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "i select edition from dropdown",
+            "match": {
+              "location": "FreeCrmSD.i_select_edition_from_dropdown()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 103492,
+              "duration": 97617196,
               "status": "passed"
             },
-            "line": 8,
-            "name": "i should naviage to main page",
+            "line": 9,
+            "name": "i should enter firstname",
             "match": {
-              "location": "CrmSignInSD.i_should_naviage_to_main_page()"
+              "location": "FreeCrmSD.i_should_enter_firstname()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 76496640,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "i should enter lastname",
+            "match": {
+              "location": "FreeCrmSD.i_should_enter_lastname()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 187354437,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "i should enter email",
+            "match": {
+              "location": "FreeCrmSD.i_should_enter_email()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 194646796,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "i should enter confirmemail",
+            "match": {
+              "location": "FreeCrmSD.i_should_enter_confirmemail()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 288361221,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "i should enter username",
+            "match": {
+              "location": "FreeCrmSD.i_should_enter_username()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 146945822,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "i should enter password",
+            "match": {
+              "location": "FreeCrmSD.i_should_enter_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 124118925,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "i should enter confirm password",
+            "match": {
+              "location": "FreeCrmSD.i_should_enter_confirm_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5095670515,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "i check the terms and conditions checkbox",
+            "match": {
+              "location": "FreeCrmSD.i_check_the_terms_and_conditions_checkbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5094818628,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "i click on submit button",
+            "match": {
+              "location": "FreeCrmSD.i_click_on_submit_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 50036,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "i should navigate to profile details page",
+            "match": {
+              "location": "FreeCrmSD.i_shoud_navigate_to_profile_details_page()"
             },
             "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "validate sign in crm page",
+    "name": "Verify CRM registration page",
     "description": "",
-    "id": "validate-sign-in-crm-page",
+    "id": "verify-crm-registration-page",
     "keyword": "Feature",
-    "uri": "Featurefile/CRMSignIn.feature"
+    "uri": "Featurefile/Freecrm.feature"
   }
 ]

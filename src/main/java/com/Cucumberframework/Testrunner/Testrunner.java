@@ -5,7 +5,7 @@ import cucumber.api.junit.Cucumber;
 import cucumber.api.CucumberOptions;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = { "classpath:Featurefile/CRMSignIn.feature" }, glue = {
+@CucumberOptions(features = { "classpath:Featurefile/Freecrm.feature" }, glue = {
 		"classpath:com.Cucumberframework.Stepdefinitions" }, plugin = { "pretty", "html:target/htmlFile",
 				"json:json_output/cucumber.json", "junit:junit_xml/cucumber.xml" },
 
