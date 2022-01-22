@@ -1,0 +1,24 @@
+Cryoportal
+
+3 leg shipment
+
+UI ---> Order got created along with location details
+
+		URL will be displayed under the section 
+
+From 1st location --> 2nd location --> 3rd location by picking up the dewer -->
+		Return back to main location
+		
+		
+		
+		
+		
+		
+
+
+
+
+
+
+
+
