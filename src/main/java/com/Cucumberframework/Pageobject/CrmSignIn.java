@@ -7,9 +7,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
-import com.Cucumberframework.Bean.Constants;
+import com.Cucumberframework.Bean.Constant;
 import com.Cucumberframework.Bean.CrmConstants;
-import com.Cucumberframework.Testbase.Testbase;
 import com.Cucumberframework.WaitHelper.Waithelper;
 
 public class CrmSignIn {
@@ -42,10 +41,11 @@ public class CrmSignIn {
 		textbox_UserName.sendKeys(credentialsinfo[0]);
 		textox_password.sendKeys(credentialsinfo[1]);
 
+
 	}
 
 	public void crmLoginButton() {
-		waithelper.elementToBeClickable(login_Button, Constants.getExplictwait());
+		waithelper.elementToBeClickable(login_Button, Constant.getExplictwait());
           
 		login_Button.sendKeys(Keys.ENTER);
 

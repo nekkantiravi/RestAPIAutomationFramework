@@ -29,6 +29,7 @@ public class WindowpoupSD {
 
 	@Then("^i should navigate to parent window$")
 	public void i_should_navigate_to_parent_window(){
+
 	   
 	}
 

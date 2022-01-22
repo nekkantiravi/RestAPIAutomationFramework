@@ -18,8 +18,9 @@ public class Homepage {
 	@FindBy(xpath = "//*[@id=\'link-rail\']/div/div/div[1]/nav/ul/li[1]/a")
 	public WebElement homepage;
 
+
 	@FindBy(xpath = "//*[@id=\'menu-item-50\']/a")
-	public WebElement myacccountlink;
+	private WebElement myacccountlink;
 
 	public Homepage(WebDriver driver) {
 		this.driver = driver;
@@ -34,6 +35,7 @@ public class Homepage {
 	
 	public void clickOnMyaccountLink() {
 		myacccountlink.click();
+		myacccountlink.
 	}
 
 }

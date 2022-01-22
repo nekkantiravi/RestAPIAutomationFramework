@@ -1,0 +1,20 @@
+[
+  {
+    "firstname": "david",
+    "lastname": "gibbs",
+    "designation": "manager",
+    "age": 24
+  },
+  {
+    "firstname": "Ravi",
+    "lastname": "nekkanti",
+    "designation": "Testlead",
+    "age": 40
+  },
+  {
+    "firstname": "Nelson",
+  "lastname": "Kumar",
+  "designation": "Test Manager",
+  "age": 50
+  }
+]
